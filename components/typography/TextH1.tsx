@@ -10,7 +10,10 @@ export default function TextH1({
   return (
     <h1
       className={cn(
-        "text-[68px] font-['Clash_Display',sans-serif] font-bold leading-[120%] tracking-[0.02em] align-middle whitespace-pre-line",
+        "text-[32px] sm:text-[40px] md:text-[52px] lg:text-[68px]",
+        "font-['Clash_Display',sans-serif] font-bold",
+        "leading-[110%] sm:leading-[115%] md:leading-[120%]",
+        "tracking-[0.02em] align-middle whitespace-pre-line",
         className
       )}
     >

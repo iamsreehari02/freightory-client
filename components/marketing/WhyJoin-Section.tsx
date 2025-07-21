@@ -2,20 +2,19 @@ import TextH3 from "@/components/typography/TextH3";
 import TextP from "@/components/typography/TextP";
 import FeatureBox from "@/components/FeatureBox";
 import { features } from "@/lib/utils";
+import Badge from "../ui/badge";
+import SectionHeader from "../ui/section-header";
 
 export default function WhyJoinSection() {
   return (
-    <section className="w-full py-20 px-6 bg-[#FBFBFE]">
-      <div className="max-w-4xl mx-auto  mb-12">
-        <TextH3 className="mb-4 text-center">Why Join Our Network</TextH3>
-        <TextP className="text-muted-foreground text-lg text-center mx-auto">
-          Built by logistics professionals for logistics professionals. <br />
-          Our platform connects freight forwarders, NVOCCs, and shipping agents
-          in a trusted global network.
-        </TextP>
-      </div>
+    <section className="w-full py-20 bg-[#FBFBFE]">
+      <SectionHeader
+        title="Why Join Our Network"
+        description="Built by logistics professionals for logistics professionals. Our platform connects freight forwarders, NVOCCs, and shipping agents in a trusted global network."
+        className="mb-12 max-w-4xl"
+      />
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map((item, index) => (
           <FeatureBox
             key={index}
@@ -25,6 +24,14 @@ export default function WhyJoinSection() {
           />
         ))}
       </div>
+      <Badge
+        bgColor="bg-[#6467F21A]"
+        textColor="text-primary"
+        dotColor="bg-[#10B981]"
+        showDot
+      >
+        5,000+ Active Members Online
+      </Badge>
     </section>
   );
 }
