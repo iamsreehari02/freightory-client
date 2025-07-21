@@ -15,7 +15,7 @@ export default function Header({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="mx-auto max-w-7xl flex items-center justify-between">
+      <div className="mx-auto px-6 max-w-7xl flex items-center justify-between">
         <Link href="/" className="text-xl font-display font-bold text-primary">
           <Image
             src="/assets/landing-logo.svg"

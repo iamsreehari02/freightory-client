@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Clash Display", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
+        sans: ["var(--font-sans)", "sans-serif"],
+        display: ["var(--font-display)", "sans-serif"],
       },
       colors: {
         "section-bg": "#FBFBFE",

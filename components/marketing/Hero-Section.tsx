@@ -9,7 +9,7 @@ import TextH1 from "../typography/TextH1";
 export default function HeroSection({ className }: { className?: string }) {
   return (
     <section className={cn(" bg-white py-12 md:py-20", className)}>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12   md:grid-cols-2">
+      <div className="mx-auto px-6 grid max-w-7xl grid-cols-1 items-center gap-12   md:grid-cols-2">
         <div className="space-y-6 text-left">
           <TextH1 className="whitespace-pre-line ">
             <span className="text-primary">GLOBAL</span>

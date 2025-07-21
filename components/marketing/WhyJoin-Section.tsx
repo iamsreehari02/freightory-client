@@ -14,7 +14,7 @@ export default function WhyJoinSection() {
         className="mb-12 max-w-4xl"
       />
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl px-6 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map((item, index) => (
           <FeatureBox
             key={index}
@@ -25,9 +25,9 @@ export default function WhyJoinSection() {
         ))}
       </div>
       <Badge
-        bgColor="bg-[#6467F21A]"
+        bgColor="#6467F21A"
         textColor="text-primary"
-        dotColor="bg-[#10B981]"
+        dotColor="#10B981"
         showDot
       >
         5,000+ Active Members Online
