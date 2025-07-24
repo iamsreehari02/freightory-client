@@ -26,10 +26,27 @@ export default function MobileNav() {
           </nav>
 
           <div className="pt-6 flex flex-col gap-2">
-            <Button variant="outline" size="sm" className="w-full">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() =>
+                window.open(
+                  "https://freightory-dashboard-client-h8ep.vercel.app/register",
+                  "_blank"
+                )
+              }
+            >
               Join Now
             </Button>
-            <Button size="sm" className="w-full">
+            <Button
+              size="sm"
+              onClick={() =>
+                window.open(
+                  "https://freightory-dashboard-client-h8ep.vercel.app/login",
+                  "_blank"
+                )
+              }
+            >
               Login
             </Button>
           </div>

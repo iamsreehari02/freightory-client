@@ -21,7 +21,17 @@ export default function HeroSection({ className }: { className?: string }) {
             thousands of trusted partners.
           </TextP>
           <div className="flex flex-col items-start gap-4 sm:flex-row">
-            <Button size="lg">Join Now</Button>
+            <Button
+              size="lg"
+              onClick={() =>
+                window.open(
+                  "https://freightory-dashboard-client-h8ep.vercel.app/register",
+                  "_blank"
+                )
+              }
+            >
+              Join Now
+            </Button>
             <Button size="lg" variant="outline">
               Learn More
             </Button>
