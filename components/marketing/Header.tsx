@@ -34,10 +34,29 @@ export default function Header({ className }: { className?: string }) {
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
-          <Button variant="outline" size="sm">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() =>
+              window.open(
+                "https://freightory-dashboard-client-h8ep.vercel.app/register",
+                "_blank"
+              )
+            }
+          >
             Join Now
           </Button>
-          <Button size="sm">Login</Button>
+          <Button
+            size="sm"
+            onClick={() =>
+              window.open(
+                "https://freightory-dashboard-client-h8ep.vercel.app/login",
+                "_blank"
+              )
+            }
+          >
+            Login
+          </Button>
         </div>
 
         <MobileNav />
