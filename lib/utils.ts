@@ -9,7 +9,7 @@ export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Network", href: "#network" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact Us", href: "https://app.indlognetwork.com/contact-us" },
 ];
 
 export const features = [

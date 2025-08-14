@@ -31,7 +31,7 @@ export default function MobileNav() {
               size="sm"
               onClick={() =>
                 window.open(
-                  "https://freightory-dashboard-client-h8ep.vercel.app/register",
+                  "https://app.indlognetwork.com/register",
                   "_blank"
                 )
               }
@@ -42,7 +42,7 @@ export default function MobileNav() {
               size="sm"
               onClick={() =>
                 window.open(
-                  "https://freightory-dashboard-client-h8ep.vercel.app/login",
+                  "https://app.indlognetwork.com/login",
                   "_blank"
                 )
               }

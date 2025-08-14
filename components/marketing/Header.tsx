@@ -27,7 +27,7 @@ export default function Header({ className }: { className?: string }) {
 
         <nav className="hidden gap-4 md:flex">
           {navLinks.map((link) => (
-            <NavLink key={link.href} href={link.href}>
+            <NavLink key={link.href} href={link.href} newTab>
               {link.label}
             </NavLink>
           ))}
@@ -39,7 +39,7 @@ export default function Header({ className }: { className?: string }) {
             size="sm"
             onClick={() =>
               window.open(
-                "https://freightory-dashboard-client-h8ep.vercel.app/register",
+                "https://app.indlognetwork.com/register",
                 "_blank"
               )
             }
@@ -50,7 +50,7 @@ export default function Header({ className }: { className?: string }) {
             size="sm"
             onClick={() =>
               window.open(
-                "https://freightory-dashboard-client-h8ep.vercel.app/login",
+                "https://app.indlognetwork.com/login",
                 "_blank"
               )
             }

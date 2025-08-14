@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
+  newTab?: boolean; 
 }
 
-export function NavLink({ href, children }: NavLinkProps) {
+export function NavLink({ href, children, newTab }: NavLinkProps) {
   return (
     <Button
       variant="ghost"
@@ -14,7 +15,13 @@ export function NavLink({ href, children }: NavLinkProps) {
       asChild
       className="text-muted-foreground hover:text-foreground transition-colors"
     >
-      <Link href={href}>{children}</Link>
+      <Link
+        href={href}
+        target={newTab ? "_blank" : "_self"}
+        rel={newTab ? "noopener noreferrer" : undefined}
+      >
+        {children}
+      </Link>
     </Button>
   );
 }
