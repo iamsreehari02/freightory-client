@@ -1,4 +1,3 @@
-// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import { Manrope } from "next/font/google";
@@ -11,8 +10,11 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Freightory",
+  title: "Indlog Network",
   description: "GLOBAL FREIGHT FORWARDERS",
+  icons: {
+    icon: [{ url: "/favicon.svg" }],
+  },
 };
 
 export default function RootLayout({
