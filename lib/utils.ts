@@ -6,10 +6,14 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Network", href: "#network" },
-  { label: "Contact Us", href: "https://app.indlognetwork.com/contact-us" },
+  { label: "Home", href: "/home" },
+  { label: "About", href: "/about" },
+  { label: "Network", href: "/network" },
+  {
+    label: "Contact Us",
+    href: "https://app.indlognetwork.com/contact-us",
+    newTab: true,
+  },
 ];
 
 export const features = [

@@ -27,7 +27,7 @@ export default function Header({ className }: { className?: string }) {
 
         <nav className="hidden gap-4 md:flex">
           {navLinks.map((link) => (
-            <NavLink key={link.href} href={link.href} newTab>
+            <NavLink key={link.href} href={link.href} newTab={link.newTab}>
               {link.label}
             </NavLink>
           ))}
@@ -38,10 +38,7 @@ export default function Header({ className }: { className?: string }) {
             variant="outline"
             size="sm"
             onClick={() =>
-              window.open(
-                "https://app.indlognetwork.com/register",
-                "_blank"
-              )
+              window.open("https://app.indlognetwork.com/register", "_blank")
             }
           >
             Join Now
@@ -49,10 +46,7 @@ export default function Header({ className }: { className?: string }) {
           <Button
             size="sm"
             onClick={() =>
-              window.open(
-                "https://app.indlognetwork.com/login",
-                "_blank"
-              )
+              window.open("https://app.indlognetwork.com/login", "_blank")
             }
           >
             Login
