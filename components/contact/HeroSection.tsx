@@ -21,7 +21,9 @@ const HeroSection = () => {
         />
 
         <Button asChild size="lg" className="mt-6">
-          <Link href="/login">Explore the Network</Link>
+          <Link href="https://app.indlognetwork.com/login">
+            Explore the Network
+          </Link>
         </Button>
       </div>
     </section>

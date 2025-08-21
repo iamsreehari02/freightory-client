@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 type SectionHeaderProps = {
   title: string;
-  description: string;
+  description?: string;
   className?: string;
   align?: "center" | "left" | "right";
   descriptionClassName?: string;

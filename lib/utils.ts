@@ -1,4 +1,5 @@
 import { clsx, type ClassValue } from "clsx";
+import { format } from "date-fns";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -40,6 +41,30 @@ export const features = [
     title: "Expert Network",
     description:
       "Simplify communication and coordination with shared digital workspaces.",
+  },
+];
+
+export const whyIndlog = [
+  {
+    icon: "/contact/truck-time.svg",
+    title: "Live Container Availability",
+    description:
+      "Access up-to-date container space instantly from global NVOCCs.",
+  },
+  {
+    icon: "/contact/shield-tick.svg",
+    title: "Verified Forwarders & NVOCCs",
+    description: "Each member is vetted for trust and transparency.",
+  },
+  {
+    icon: "/contact/global.svg",
+    title: "Global Expansion",
+    description: "Get discovered by agents and shippers worldwide.",
+  },
+  {
+    icon: "/contact/profile-2user.svg",
+    title: "Built by MFA Network",
+    description: "Backed by a trusted logistics tech pioneer.",
   },
 ];
 
@@ -95,7 +120,7 @@ export const latestMembers = [
 ];
 
 export const companyLinks = [
-  { label: "About Us", href: "#" },
+  { label: "About Us", href: "/about" },
   { label: "Careers", href: "#" },
   { label: "Blog", href: "#" },
   { label: "Press", href: "#" },
@@ -103,14 +128,22 @@ export const companyLinks = [
 
 export const navigationLinks = [
   { label: "Home", href: "#" },
-  { label: "Join Network", href: "#" },
+  {
+    label: "Join Network",
+    href: "https://app.indlognetwork.com/register",
+    newTab: true,
+  },
   { label: "Find Partners", href: "#" },
   { label: "Events", href: "#" },
 ];
 
 export const supportLinks = [
   { label: "Help Center", href: "#" },
-  { label: "Contact Us", href: "#" },
+  { label: "Contact Us", href: "/contact-us" },
   { label: "Privacy Policy", href: "#" },
   { label: "Terms & Conditions", href: "#" },
 ];
+
+export const formatDate = (dateString: string): string => {
+  return format(new Date(dateString), "dd MMM yyyy");
+};
